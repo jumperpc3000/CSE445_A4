@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="HotelsStyle.xsl"?>
 <Hotels>
   <Hotel Rating="4.2">
     <Name>Westin</Name>
