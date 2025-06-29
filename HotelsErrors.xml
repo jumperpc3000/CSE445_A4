@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (1) ERROR: Root element is incorrect (Hotels) -->
+<Hotel>
+  <Hotel Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E. 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (2) ERROR: Missing required attribute (NearestAirport) -->
+  <Hotel Rating="4.5">
+    <Name>Hyatt Regency</Name>
+    <Phone>602-252-1234</Phone>
+    <Address>
+      <Number>122</Number>
+      <Street>N 2nd St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (3) ERROR: Missing Phone element -->
+  <Hotel>
+    <Name>Hilton Garden Inn</Name>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2102</Number>
+      <Street>E Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <!-- (4) ERROR: Missing closing tag for Address element -->
+  <Hotel Rating="3.9">
+    <Name>DoubleTree by Hilton</Name>
+    <Phone>480-967-1441</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>2100</Number>
+      <Street>S Priest Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    <!-- Missing </Address> -->
+  </Hotel>
+
+  <!-- (5) ERROR: Two Name elements in one Hotel -->
+  <Hotel Rating="4.1">
+    <Name>Aloft Tempe</Name>
+    <Name>Another Name</Name>
+    <Phone>480-621-3300</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>951</Number>
+      <Street>E Playa del Norte Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+</Hotel>
